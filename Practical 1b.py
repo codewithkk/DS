@@ -15,9 +15,11 @@ result = [[0,0,0],
 for i in range(len(X)): 
 # iterate through columns       
     for j in range(len(X[0])): 
-        result[i][j] = X[i][j] + Y[i][j] 
-        for r in result: 
-            print(r)
+        result[i][j] = X[i][j] + Y[i][j]
+print("ADDITION_OF_TWO_MATRIX")
+for r in result:
+    print(r)
+    
             
 # Program to multiply two matrices
  # 3x3 matrix 
@@ -38,17 +40,22 @@ for i in range(len(X)):
     for j in range(len(Y[0])): 
 # iterate through rows of Y 
         for k in range(len(Y)):      
-            result[i][j] += X[i][k] * Y[k][j] 
-            for r in result: 
-                print(r)
+            result[i][j] += X[i][k] * Y[k][j]
+print("MULTIPLICATION_OF_TWO_MATRIX")
+for r in result: 
+    print(r)
                 
 # Program to transpose a matrix 
-X = [[12,7], [4 ,5], [3 ,8]]
-result = [[0,0,0], [0,0,0]]
+X = [[12,7],
+     [4 ,5],
+     [3 ,8]]
+result = [[0,0,0],
+          [0,0,0]]
  # iterate through rows
 for i in range(len(X)): 
 # iterate through columns 
     for j in range(len(X[0])): 
-        result[j][i] = X[i][j] 
-        for r in result: 
-            print(r)
+        result[j][i] = X[i][j]
+print("TRANSPOSE_OF_A_MATRIX")
+for r in result: 
+    print(r)
